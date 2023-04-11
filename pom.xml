@@ -12,6 +12,7 @@
         <module>WordCount</module>
         <module>ArtConcurrentBook</module>
         <module>Common</module>
+        <module>Spring5</module>
     </modules>
 
     <properties>
