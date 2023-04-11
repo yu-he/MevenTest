@@ -1,4 +1,4 @@
-package ArtConcurrentBook.chapter01;
+package chapter01;
 
 /**
  * 并发和单线程执行测试

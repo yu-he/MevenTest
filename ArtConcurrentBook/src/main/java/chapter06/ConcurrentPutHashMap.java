@@ -1,4 +1,4 @@
-package ArtConcurrentBook.chapter06;
+package chapter06;
 
 import java.util.HashMap;
 import java.util.UUID;

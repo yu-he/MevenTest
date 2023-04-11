@@ -1,4 +1,4 @@
-package ArtConcurrentBook.chapter01;
+package chapter01;
 
 
 /**

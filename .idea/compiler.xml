@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="WordCount" />
+        <module name="ArtConcurrentBook" />
+        <module name="Common" />
       </profile>
     </annotationProcessing>
   </component>

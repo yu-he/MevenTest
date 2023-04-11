@@ -1,4 +1,4 @@
-package ArtConcurrentBook.chapter02;
+package chapter02;
 
 
 import java.util.*;

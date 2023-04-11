@@ -1,4 +1,4 @@
-package ArtConcurrentBook.chapter07;
+package chapter07;
 
 import java.util.concurrent.atomic.AtomicReference;
 

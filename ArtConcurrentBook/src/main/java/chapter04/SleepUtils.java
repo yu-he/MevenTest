@@ -1,4 +1,4 @@
-package ArtConcurrentBook.chapter04;
+package chapter04;
 
 import java.util.concurrent.TimeUnit;
 

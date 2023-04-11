@@ -1,4 +1,4 @@
-package ArtConcurrentBook.chapter05;
+package chapter05;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
