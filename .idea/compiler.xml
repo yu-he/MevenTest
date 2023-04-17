@@ -6,9 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="hello-world" />
         <module name="ArtConcurrentBook" />
-        <module name="Spring5" />
         <module name="WordCount" />
+        <module name="chapter03" />
         <module name="Common" />
       </profile>
     </annotationProcessing>
