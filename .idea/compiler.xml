@@ -9,8 +9,8 @@
         <module name="hello-world" />
         <module name="ArtConcurrentBook" />
         <module name="WordCount" />
-        <module name="chapter03" />
         <module name="Common" />
+        <module name="setter-injection" />
       </profile>
     </annotationProcessing>
   </component>
