@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="application-context-aware" />
         <module name="hello-world" />
         <module name="ArtConcurrentBook" />
         <module name="WordCount" />
