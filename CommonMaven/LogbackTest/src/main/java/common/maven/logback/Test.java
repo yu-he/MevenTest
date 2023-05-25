@@ -1,7 +1,7 @@
 package common.maven.logback;
 
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.*;
+import org.springframework.core.io.ClassPathResource;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -14,7 +14,10 @@ public class Test {
     }
 
     private static void readProperties() throws IOException {
-        InputStream in = ClassLoader.getSystemResourceAsStream("system.properties");
+        //InputStream in = ClassLoader.getSystemResourceAsStream("system.properties");
+
+        ClassPathResource resource = new ClassPathResource("system.properties");
+        InputStream in = resource.getInputStream();
 
         Properties properties = new Properties();
         properties.load(in);
