@@ -5,9 +5,7 @@ import java.net.URLEncoder;
 
 public class StringTest {
     public static void main(String... args) throws UnsupportedEncodingException {
-        //http://172.22.70.85:8216/hghtest/cfps-api/upload/files/20230531/%E4%B8%AD%E6%96%87%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84%E6%B5%8B%E8%AF%95.png
-        //http://172.22.70.85:8216/hghtest/cfps-api/upload/files/20230531/中文图片路径测试.png
-        String url = "http://172.22.70.85:8216/hghtest/cfps-api/upload/files/20230531/中文图片路径测试.png";
+        String url = "";
 
         int lastIndex = url.lastIndexOf("/");
         int dotIndex = url.lastIndexOf(".");

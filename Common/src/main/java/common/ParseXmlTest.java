@@ -13,6 +13,7 @@ public class ParseXmlTest {
         Element list = root.element("list");
         List<Element> message = list.elements("message");
         //System.out.println(message.get(1).element("123").getText());
+        System.out.println(message.get(1).elementText("123"));
         System.out.println(message.get(1).elementText("123").replaceAll("123",""));
     }
 
