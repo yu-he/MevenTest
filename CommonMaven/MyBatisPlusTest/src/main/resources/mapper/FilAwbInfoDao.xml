@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.mybatisplus.mapper.FilAwbInfoDao">
+    <select id="queryAwb" resultType="org.example.mybatisplus.entity.FilAwbInfo">
+        select * from t_fil_awbinfo where 1 = 1
+        <if test="billId != null and billId != ''">
+            AND billId = #{billId}
+        </if>
+        <if test="stockTypeId != null and stockTypeId != ''">
+            and stocktypeid = #{stockTypeId}
+        </if>
+        <if test="stockPre != null and stockPre != ''">
+            and stockpre = #{stockPre}
+        </if>
+        <if test="stockNo != null and stockNo != ''">
+            and stockno = #{stockNo}
+        </if>
+    </select>
+</mapper>
