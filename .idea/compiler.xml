@@ -8,15 +8,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ArtConcurrentBook" />
-        <module name="WordCount" />
         <module name="DataBaseTest" />
-        <module name="application-context-aware" />
         <module name="hello-world" />
         <module name="hghEsbTest" />
         <module name="LogbackTest" />
         <module name="Common" />
+        <module name="MyBatisPlusTest" />
+        <module name="DruidDataSourceTest" />
+        <module name="WordCount" />
+        <module name="application-context-aware" />
         <module name="setter-injection" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="MybatisTest" target="1.8" />
+      <module name="untitled" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

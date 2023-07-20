@@ -8,7 +8,12 @@ public class IntegerTest {
         Integer b = 133;
 
         System.out.println(a == b);
-        System.out.println(Objects.equals(a,b));
+        System.out.println(Objects.equals(a, b));
         a.equals(b);
+
+        String str = "";
+        if (str != null) {
+
+        }
     }
 }
