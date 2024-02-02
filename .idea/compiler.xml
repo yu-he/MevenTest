@@ -14,8 +14,8 @@
         <module name="LogbackTest" />
         <module name="mvc-demo" />
         <module name="Common" />
-        <module name="RocketmqTest" />
         <module name="MyBatisPlusTest" />
+        <module name="SpringBootMavenPackTest" />
         <module name="DruidDataSourceTest" />
         <module name="WordCount" />
         <module name="application-context-aware" />
