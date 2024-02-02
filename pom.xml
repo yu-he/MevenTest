@@ -17,6 +17,8 @@
         <module>InfoSky/hghEsbTest</module>
         <module>CommonMaven</module>
         <module>spring-demo</module>
+        <module>RocketmqTest</module>
+        <module>CommonMaven/RocketmqTest2</module>
     </modules>
 
     <properties>

@@ -16,6 +16,7 @@
         <module>DataBaseTest</module>
         <module>DruidDataSourceTest</module>
         <module>MyBatisPlusTest</module>
+        <module>RocketmqTest2</module>
     </modules>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

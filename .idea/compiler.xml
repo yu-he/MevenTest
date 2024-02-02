@@ -8,16 +8,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ArtConcurrentBook" />
-        <module name="MyBatisPlusTest" />
-        <module name="DruidDataSourceTest" />
         <module name="DataBaseTest" />
-        <module name="WordCount" />
-        <module name="application-context-aware" />
         <module name="hello-world" />
         <module name="hghEsbTest" />
         <module name="LogbackTest" />
         <module name="mvc-demo" />
         <module name="Common" />
+        <module name="RocketmqTest" />
+        <module name="MyBatisPlusTest" />
+        <module name="DruidDataSourceTest" />
+        <module name="WordCount" />
+        <module name="application-context-aware" />
+        <module name="RocketmqTest2" />
         <module name="setter-injection" />
       </profile>
     </annotationProcessing>

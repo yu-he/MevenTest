@@ -46,6 +46,7 @@ public class Test {
         if (resultSet.next()) {
             System.out.println(resultSet.getString(1));
         }
+
         statement.close();
         conn.close();
     }
