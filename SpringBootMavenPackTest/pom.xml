@@ -25,16 +25,6 @@
             <artifactId>spring-cloud-starter-bootstrap</artifactId>
             <version>3.0.4</version>
         </dependency>
-        <dependency>
-            <groupId>org.apache.rocketmq</groupId>
-            <artifactId>rocketmq-client</artifactId>
-            <version>4.9.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.rocketmq</groupId>
-            <artifactId>rocketmq-acl</artifactId>
-            <version>4.9.0</version>
-        </dependency>
     </dependencies>
 
     <build>
