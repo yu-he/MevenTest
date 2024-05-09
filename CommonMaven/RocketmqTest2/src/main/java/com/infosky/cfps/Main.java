@@ -18,12 +18,24 @@ import org.springframework.core.io.ClassPathResource;
 
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        long lt = Long.parseLong("1715159154452");
+        Date date = null;
+            date = sdf.parse(sdf.format(lt));
+            sdf.format(date);
+            System.out.println(date);
+    }
+
+    public static void test() {
         try {
 //            Properties properties = new Properties();
 //            ClassPathResource resource = new ClassPathResource("system.properties");
@@ -99,6 +111,37 @@ public class Main {
             }
         } catch (Exception ex) {
             System.out.println("程序运行异常：" + ex.getMessage() + "：" + Arrays.toString(ex.getStackTrace()));
+        }
+    }
+
+    public static void test2() {
+        String consumerGroupName = "IIS_CMS";
+        String nameServerAddress = "172.22.73.140:9876";
+        String topic = "XIY-CMS-DLV,XIY-CMS-AWB";
+        String[] topicList = topic.split(",");
+        try {
+            for (String topicItem : topicList) {
+                DefaultLitePullConsumer consumer = new DefaultLitePullConsumer(consumerGroupName);
+                consumer.setNamesrvAddr(nameServerAddress);
+                consumer.setConsumeFromWhere(ConsumeFromWhere.CONSUME_FROM_FIRST_OFFSET);
+                consumer.setAutoCommit(false);
+                consumer.subscribe(topicItem, "*");
+                consumer.start();
+
+                List<MessageExt> msgExtList = consumer.poll();
+                consumer.commitSync();
+                if (msgExtList == null || msgExtList.isEmpty()) {
+                    System.out.println("接收到的消息数组为空");
+                }
+
+                for (MessageExt messageExt : msgExtList) {
+                    String msgBody = new String(messageExt.getBody(), StandardCharsets.UTF_8);
+                    System.out.println("接收到的消息：" + topicItem + ":" + msgBody);
+                }
+                consumer.shutdown();
+            }
+        } catch (Exception ex) {
+            System.out.println("mq消费异常：" + ex.getMessage() + "：" + Arrays.toString(ex.getStackTrace()));
         }
     }
 }
