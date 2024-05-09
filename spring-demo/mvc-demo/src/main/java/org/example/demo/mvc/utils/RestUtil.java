@@ -15,6 +15,7 @@ import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -38,13 +39,13 @@ public class RestUtil {
 
     public static void requestParamTest() throws IOException {
         HashMap<String, String> header = new HashMap<>();
-        header.put("Content-Type", "application/x-www-form-urlencoded");
+        header.put("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
 
         //StringEntity entity = new StringEntity(content);
 
         List<NameValuePair> nvpList = new ArrayList<>();
-        nvpList.add(new BasicNameValuePair("name", "name123"));
-        UrlEncodedFormEntity entity = new UrlEncodedFormEntity(nvpList);
+        nvpList.add(new BasicNameValuePair("name", "名字"));
+        UrlEncodedFormEntity entity = new UrlEncodedFormEntity(nvpList, "utf-8");
 
         System.out.println(RestUtil.post("http://localhost:8801/requestParamTest", header, entity));
     }

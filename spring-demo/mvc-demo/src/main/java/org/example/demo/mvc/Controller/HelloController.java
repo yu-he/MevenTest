@@ -11,8 +11,8 @@ public class HelloController {
         return "index";
     }
 
-    @RequestMapping(value = "/requestParamTest", produces = "application/json; charset=utf-8")
-    public String requestParamTest(@RequestParam("name") String name) {
+    @RequestMapping(value = "/requestParamTest", produces = "application/json;charset=utf-8")
+    public String requestParamTest(@RequestParam(value = "name", required = false) String name) {
         return name + "测试成功";
     }
 }
